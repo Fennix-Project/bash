@@ -1497,6 +1497,9 @@ case $os in
 	dicos*)
 		os=dicos
 		;;
+	fennix*)
+		os=fennix
+		;;
 	pikeos*)
 		# Until real need of OS specific support for
 		# particular features comes up, bare metal
@@ -1702,6 +1705,9 @@ case $cpu-$vendor in
 	*-wrs)
 		os=vxworks
 		;;
+	*-fennix)
+		os=fennix
+		;;
 	*)
 		os=none
 		;;
@@ -1754,7 +1760,7 @@ case $os in
 	     | onefs* | tirtos* | phoenix* | fuchsia* | redox* | bme* \
 	     | midnightbsd* | amdhsa* | unleashed* | emscripten* | wasi* \
 	     | nsk* | powerunix* | genode* | zvmoe* | qnx* | emx* | zephyr* \
-	     | fiwix* )
+	     | fiwix* | fennix* )
 		;;
 	# This one is extra strict with allowed versions
 	sco3.2v2 | sco3.2v[4-9]* | sco5v6*)
